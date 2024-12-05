@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Translate Sadova</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./css/media/icon.png">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Гра «Переклади англійське слово»</h1>
+        <div class="bloc">
+            <p>Отримуйте бали за правильно перекладені слова.</p>
+            <p>Враховуйте, що пусті поля та пробіли не враховуються 😊 </p>
+            <p>Успіхів у вивченні нових слів!</p>
+        </div>
+        <div class="levels">
+            <p>Оберіть рівень складності:</p>
+            <label>
+                <input type="radio" name="levels" value="easy" checked>
+                Легкий
+            </label>
+            <label>
+                <input type="radio" name="levels" value="medium">
+                Середній
+            </label>
+            <label>
+                <input type="radio" name="levels" value="hard">
+                Складний
+            </label>
+        </div>
+        <div class="base">
+            <div class="game">
+                <div class="zovni">
+                    <p id="word">Переклади мене</p>
+                    <input type="text" id="translation" placeholder="Який переклад цього слова?">
+                    <button id="win">Перевір</button>
+                </div>
+                <div class="vseredyni">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
